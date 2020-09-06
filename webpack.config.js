@@ -28,10 +28,14 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
+        modules: [path.resolve('./node_modules')],
         alias: {
-            'react-dom': '@hot-loader/react-dom' 
-        }
+            'react-dom': '@hot-loader/react-dom',
+            styles: path.resolve(__dirname, 'root/styles'),
+            routing: path.resolve(__dirname, 'root/routing'),
+            pages: path.resolve(__dirname, 'root/pages'),
+        },
+        extensions: ['.tsx', '.ts', '.js', '.scss']
     },
     output: {
         path: path.resolve(__dirname, 'dist/'),
@@ -43,6 +47,7 @@ module.exports = {
         port: 3000,
         publicPath: 'http://localhost:3000/dist/',
         hotOnly: true,
+        historyApiFallback: true
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
