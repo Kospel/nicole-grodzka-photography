@@ -1,1 +1,1 @@
-# nicole-grodzka-photography
+Nicole Grodzka Photography
