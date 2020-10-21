@@ -34,6 +34,7 @@ module.exports = {
             styles: path.resolve(__dirname, 'root/styles'),
             routing: path.resolve(__dirname, 'root/routing'),
             pages: path.resolve(__dirname, 'root/pages'),
+            common: path.resolve(__dirname, 'root/common')
         },
         extensions: ['.tsx', '.ts', '.js', '.scss']
     },

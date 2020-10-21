@@ -1,0 +1,15 @@
+.logo {
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+
+    & > .main-page-title {
+        font-size: 21px;
+    }
+
+    & > .main-page-sub-title {
+        margin-left: 10px;
+        font-size: 12px;
+        letter-spacing: 9px;
+    }
+}

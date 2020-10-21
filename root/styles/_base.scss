@@ -1,4 +1,6 @@
 body {
-  background: #222222;
-  color: #dddddd;
+  background: $background-color;
+  color: $text-color;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

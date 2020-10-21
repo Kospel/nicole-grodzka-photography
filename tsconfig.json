@@ -11,7 +11,8 @@
     "baseUrl": "./",
     "paths": {
       "routing/*": ["root/routing/*"],
-      "pages/*": ["root/pages/*"]
+      "pages/*": ["root/pages/*"],
+      "common/*": ["root/common/*"]
     }
   }
 }

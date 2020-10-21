@@ -1,0 +1,13 @@
+.page-layout {
+    @import './components/sidebar/sidebar';
+
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+
+    .main-content {
+        padding: 30px;
+        width: 100%;
+    }
+}
