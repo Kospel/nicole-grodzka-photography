@@ -1,0 +1,9 @@
+.sidebar {
+    @import './navigation/navigation';
+    @import './logo/logo';
+
+    $sidebar-padding: 30px;
+
+    width: 220px;
+    padding: $sidebar-padding 0 $sidebar-padding $sidebar-padding;
+ }
