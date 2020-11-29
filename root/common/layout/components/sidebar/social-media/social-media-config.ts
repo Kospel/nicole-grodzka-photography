@@ -14,7 +14,7 @@ export const socialMediaConfig: SocialMediaConfig[] = [
     link: "http://www.facebook.com",
   },
   {
-    name: "Facebook",
+    name: "Instagram",
     icon: ICONS.INSTAGRAM,
     link: "http://www.instargram.com",
   },
