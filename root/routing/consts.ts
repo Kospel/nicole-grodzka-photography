@@ -5,9 +5,9 @@ import HomePage from 'pages/home-page';
 
 export enum APP_PATH_URL {
   INDEX = '/',
-  HOME= '/home',
+  HOME = '/home',
   ABOUT = '/about',
-};
+}
 
 export const routingDefinition: RoutingDefinition[] = [
   {

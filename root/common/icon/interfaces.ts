@@ -1,6 +1,6 @@
 import { IconProp, SizeProp } from '@fortawesome/fontawesome-svg-core';
 
-export interface Icon {
+export interface IconProps {
   icon: IconProp;
   size?: SizeProp;
   className?: string;

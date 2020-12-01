@@ -1,21 +1,22 @@
-import { Icon } from 'common/icon/interfaces';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+
 import { ICONS } from 'common/icon';
 
 interface SocialMediaConfig {
   name: string;
-  icon: Icon["icon"];
+  icon: IconProp;
   link: string;
 }
 
 export const socialMediaConfig: SocialMediaConfig[] = [
   {
-    name: "Facebook",
+    name: 'Facebook',
     icon: ICONS.FACEBOOK,
-    link: "http://www.facebook.com",
+    link: 'http://www.facebook.com',
   },
   {
-    name: "Instagram",
+    name: 'Instagram',
     icon: ICONS.INSTAGRAM,
-    link: "http://www.instargram.com",
+    link: 'http://www.instargram.com',
   },
 ];
