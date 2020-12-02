@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-    "prettier": "prettier --check '*/**/*.{js,ts,tsx}'",
-    "prettier-fix": "prettier --write '*/**/*.{js,ts,tsx}'"
+    "lint": "eslint 'root/**/*.{js,ts,tsx}'",
+    "lint-fix": "eslint 'root/**/*.{js,ts,tsx}' --fix",
+    "prettier": "prettier 'root/**/*.{js,ts,tsx}' --check",
+    "prettier-fix": "prettier 'root/**/*.{js,ts,tsx}' --write",
+    "check": "npm run lint ; npm run prettier"
   },
   "repository": {
     "type": "git",

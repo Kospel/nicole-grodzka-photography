@@ -1,10 +1,10 @@
 .sidebar {
-    @import './navigation/navigation';
-    @import './logo/logo';
-    @import './social-media/social-media';
+  @import './navigation/navigation';
+  @import './logo/logo';
+  @import './social-media/social-media';
 
-    $sidebar-padding: 30px;
+  $sidebar-padding: 30px;
 
-    width: 220px;
-    padding: $sidebar-padding 0 $sidebar-padding $sidebar-padding;
- }
+  width: 220px;
+  padding: $sidebar-padding 0 $sidebar-padding $sidebar-padding;
+}
