@@ -10,13 +10,18 @@ interface SocialMediaConfig {
 
 export const socialMediaConfig: SocialMediaConfig[] = [
   {
-    name: 'Facebook',
-    icon: ICONS.FACEBOOK,
-    link: 'http://www.facebook.com',
-  },
-  {
     name: 'Instagram',
     icon: ICONS.INSTAGRAM,
-    link: 'http://www.instargram.com',
+    link: 'https://www.instagram.com/Nicole_Grodzka_photography/',
+  },
+  {
+    name: 'LinkedIn',
+    icon: ICONS.LINKEDIN,
+    link: 'https://www.linkedin.com/in/nicole-grodzka-41180893/',
+  },
+  {
+    name: 'Behance',
+    icon: ICONS.BEHANCE,
+    link: 'https://www.behance.net/nicolegrodzka',
   },
 ];

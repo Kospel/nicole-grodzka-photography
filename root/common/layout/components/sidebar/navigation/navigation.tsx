@@ -5,8 +5,10 @@ import { APP_PATH_URL } from 'routing/consts';
 
 const Navigation: FunctionComponent = () => (
   <div className="navigation">
-    <Link to={APP_PATH_URL.ABOUT}>ABOUT</Link>
-    <Link to={APP_PATH_URL.HOME}>HOME</Link>
+    <Link to={APP_PATH_URL.HOME}>STRONA GŁÓWNA</Link>
+    <Link to={APP_PATH_URL.VIDEO}>WIDEO</Link>
+    <Link to={APP_PATH_URL.CONTACT}>KONTAKT</Link>
+    <Link to={APP_PATH_URL.COOPERATION}>WSPÓŁPRACA</Link>
   </div>
 );
 

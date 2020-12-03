@@ -1,12 +1,16 @@
 import { RoutingDefinition } from './interfaces';
 
-import AboutPage from 'pages/about-page';
+import VideoPage from 'pages/video-page';
 import HomePage from 'pages/home-page';
+import ContactPage from 'pages/contact-page';
+import CooperationPage from 'pages/cooperation-page';
 
 export enum APP_PATH_URL {
   INDEX = '/',
   HOME = '/home',
-  ABOUT = '/about',
+  VIDEO = '/video',
+  CONTACT = '/contact',
+  COOPERATION = '/cooperation',
 }
 
 export const routingDefinition: RoutingDefinition[] = [
@@ -21,8 +25,18 @@ export const routingDefinition: RoutingDefinition[] = [
     isExact: true,
   },
   {
-    component: AboutPage,
-    path: APP_PATH_URL.ABOUT,
+    component: VideoPage,
+    path: APP_PATH_URL.VIDEO,
+    isExact: true,
+  },
+  {
+    component: ContactPage,
+    path: APP_PATH_URL.CONTACT,
+    isExact: true,
+  },
+  {
+    component: CooperationPage,
+    path: APP_PATH_URL.COOPERATION,
     isExact: true,
   },
 ];
