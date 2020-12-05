@@ -3,8 +3,7 @@
   @import './logo/logo';
   @import './social-media/social-media';
 
-  $sidebar-padding: 30px;
-
-  width: 220px;
+  width: $sidebar-width;
   padding: $sidebar-padding 0 $sidebar-padding $sidebar-padding;
+  position: fixed;
 }

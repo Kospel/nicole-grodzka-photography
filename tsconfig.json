@@ -12,7 +12,8 @@
     "paths": {
       "routing/*": ["root/routing/*"],
       "pages/*": ["root/pages/*"],
-      "common/*": ["root/common/*"]
+      "common/*": ["root/common/*"],
+      "assets/*": ["root/assets/*"]
     }
   }
 }

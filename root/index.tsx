@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Layout from 'common/layout';
+import PageLayout from 'common/page-layout';
 
 import './index.scss';
 
 const root = document.getElementById('root');
 
-const renderApp = () => render(<Layout />, root);
+const renderApp = () => render(<PageLayout />, root);
 
 renderApp();
