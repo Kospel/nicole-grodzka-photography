@@ -1,0 +1,6 @@
+{
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "no-duplicate-selectors": true
+  }
+}

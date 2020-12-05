@@ -9,7 +9,8 @@
     "lint-fix": "eslint 'root/**/*.{js,ts,tsx}' --fix",
     "prettier": "prettier 'root/**/*.{js,ts,tsx}' --check",
     "prettier-fix": "prettier 'root/**/*.{js,ts,tsx}' --write",
-    "check": "npm run lint ; npm run prettier"
+    "stylelint": "stylelint 'root/**/*.scss'",
+    "check": "npm run lint ; npm run prettier ; npm run stylelint"
   },
   "repository": {
     "type": "git",
@@ -61,7 +62,9 @@
     "react-hot-loader": "^4.3.11",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "sass-loader": "^9.0.2"
+    "sass-loader": "^9.0.2",
+    "stylelint": "^13.8.0",
+    "stylelint-scss": "^3.18.0"
   },
   "husky": {
     "hooks": {
