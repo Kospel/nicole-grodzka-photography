@@ -6,7 +6,7 @@ import SwitchRouter from 'routing/switch-router';
 
 import Sidebar from './components/sidebar';
 
-const Layout: FunctionComponent = () => (
+const PageLayout: FunctionComponent = () => (
   <Router>
     <div className="page-layout">
       <Sidebar />
@@ -15,4 +15,4 @@ const Layout: FunctionComponent = () => (
   </Router>
 );
 
-export default hot(Layout);
+export default hot(PageLayout);
