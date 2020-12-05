@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "lint": "eslint 'root/**/*.{js,ts,tsx}'",
-    "lint-fix": "eslint 'root/**/*.{js,ts,tsx}' --fix",
-    "prettier": "prettier 'root/**/*.{js,ts,tsx}' --check",
-    "prettier-fix": "prettier 'root/**/*.{js,ts,tsx}' --write",
+    "lint": "eslint 'root/**/*.{ts,tsx}'",
+    "lint-fix": "eslint 'root/**/*.{ts,tsx}' --fix",
+    "prettier": "prettier 'root/**/*.{ts,tsx}' --check",
+    "prettier-fix": "prettier 'root/**/*.{ts,tsx}' --write",
     "stylelint": "stylelint 'root/**/*.scss' --syntax=scss",
     "check": "npm run lint ; npm run prettier ; npm run stylelint"
   },
@@ -73,8 +73,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint",
-    "*.{js,ts,tsx,scss}": "prettier --check",
+    "*.{ts,tsx}": "eslint",
+    "*.{ts,tsx,scss}": "prettier --check",
     "*.{scss}": "stylelint --syntax=scss"
   }
 }
