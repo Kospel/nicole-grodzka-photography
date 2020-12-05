@@ -9,7 +9,7 @@
     "lint-fix": "eslint 'root/**/*.{js,ts,tsx}' --fix",
     "prettier": "prettier 'root/**/*.{js,ts,tsx}' --check",
     "prettier-fix": "prettier 'root/**/*.{js,ts,tsx}' --write",
-    "stylelint": "stylelint 'root/**/*.scss'",
+    "stylelint": "stylelint 'root/**/*.scss' --syntax=scss",
     "check": "npm run lint ; npm run prettier ; npm run stylelint"
   },
   "repository": {
@@ -73,6 +73,7 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint",
-    "*.{js,ts,tsx,scss}": "prettier --check"
+    "*.{js,ts,tsx,scss}": "prettier --check",
+    "*.{scss}": "stylelint --syntax=scss"
   }
 }
