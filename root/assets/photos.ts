@@ -1,4 +1,21 @@
-export const examplePhotos = [
+import { Photo } from 'common/photo-gallery/interfaces';
+
+const PHOTO_PATH = '/assets/photos';
+
+export const localPhotos: Photo[] = [
+  {
+    src: `${PHOTO_PATH}/1.jpg`,
+    width: 2736,
+    height: 2736,
+  },
+  {
+    src: `${PHOTO_PATH}/2.jpg`,
+    width: 3943,
+    height: 5982,
+  },
+];
+
+export const examplePhotos: Photo[] = [
   {
     src: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599',
     width: 800,
@@ -46,7 +63,7 @@ export const examplePhotos = [
   },
 ];
 
-export const nicolePhoto = [
+export const nicolePhoto: Photo[] = [
   {
     src: 'https://images91.fotosik.pl/449/f62cd5576f543bb8.jpg',
     width: 2736,

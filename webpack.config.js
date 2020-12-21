@@ -1,7 +1,9 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable */
+
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlgin = require('html-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -45,18 +47,21 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/'),
-    publicPath: '/dist/',
+    publicPath: '/',
     filename: 'bundle.js',
   },
   devServer: {
     contentBase: path.join(__dirname, 'root/'),
     port: 3000,
-    publicPath: 'http://localhost:3000/dist/',
+    // publicPath: 'http://localhost:3000/dist/',
     hotOnly: true,
     historyApiFallback: true,
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlgin({
+      template: 'root/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFileName: '[id].css',
