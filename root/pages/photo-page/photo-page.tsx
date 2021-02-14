@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react';
 
 import PhotoGallery from 'common/photo-gallery';
-import { localPhotos } from 'assets/photos';
+import { foodPhotos } from 'assets/photos';
 
 const PhotoPage: FunctionComponent = () => (
   <div className="photo-page">
-    <PhotoGallery photos={localPhotos} />
+    <PhotoGallery photos={foodPhotos} />
   </div>
 );
 
