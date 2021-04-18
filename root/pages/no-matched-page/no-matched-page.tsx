@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 
 const NoMatchedPage: FunctionComponent = () => <div>Page not found!</div>;
 
-export default NoMatchedPage;
+export default memo(NoMatchedPage);

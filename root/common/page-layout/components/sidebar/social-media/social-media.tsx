@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 
 import Icon from 'common/icon';
 import { socialMediaConfig } from './social-media-config';
@@ -20,4 +20,4 @@ const SocialMedia: FunctionComponent = () => (
   <div className="social-media">{socialMediaIconPack()}</div>
 );
 
-export default SocialMedia;
+export default memo(SocialMedia);

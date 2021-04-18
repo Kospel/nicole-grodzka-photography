@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 import { Link } from 'react-router-dom';
 
 import { APP_PATH_URL } from 'routing/consts';
@@ -11,4 +11,4 @@ const Navigation: FunctionComponent = () => (
   </div>
 );
 
-export default Navigation;
+export default memo(Navigation);

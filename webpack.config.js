@@ -31,6 +31,10 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   resolve: {
@@ -42,6 +46,7 @@ module.exports = {
       pages: path.resolve(__dirname, 'root/pages'),
       common: path.resolve(__dirname, 'root/common'),
       assets: path.resolve(__dirname, 'root/assets'),
+      utils: path.resolve(__dirname, 'root/utils'),
     },
     extensions: ['.tsx', '.ts', '.js', '.scss'],
   },

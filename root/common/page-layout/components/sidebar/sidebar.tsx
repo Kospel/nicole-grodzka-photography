@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 
 import Logo from './logo';
 import Navigation from './navigation';
@@ -12,4 +12,4 @@ const Sidebar: FunctionComponent = () => (
   </div>
 );
 
-export default Sidebar;
+export default memo(Sidebar);

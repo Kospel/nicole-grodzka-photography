@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 
 const ContactPage: FunctionComponent = () => <div>CONTACT PAGE</div>;
 
-export default ContactPage;
+export default memo(ContactPage);

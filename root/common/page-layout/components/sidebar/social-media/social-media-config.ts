@@ -19,9 +19,4 @@ export const socialMediaConfig: SocialMediaConfig[] = [
     icon: ICONS.LINKEDIN,
     link: 'https://www.linkedin.com/in/nicole-grodzka-41180893/',
   },
-  {
-    name: 'Behance',
-    icon: ICONS.BEHANCE,
-    link: 'https://www.behance.net/nicolegrodzka',
-  },
 ];

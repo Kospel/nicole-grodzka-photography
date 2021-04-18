@@ -1,14 +1,16 @@
 .page-layout {
   @import './components/sidebar/sidebar';
 
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
 
   .main-content {
-    padding: 30px;
-    width: calc(100% - #{$sidebar-width-with-padding});
-    margin-left: $sidebar-width-with-padding;
+    padding: 100px $page-padding;
+    padding-left: 0;
+    width: 100%;
+    overflow: hidden;
   }
 }
