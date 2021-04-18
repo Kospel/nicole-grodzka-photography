@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 
 const Logo: FunctionComponent = () => (
   <div className="logo">
@@ -7,4 +7,4 @@ const Logo: FunctionComponent = () => (
   </div>
 );
 
-export default Logo;
+export default memo(Logo);

@@ -4,6 +4,8 @@
   @import './social-media/social-media';
 
   width: $sidebar-width;
-  padding: $sidebar-padding 0 $sidebar-padding $sidebar-padding;
-  position: fixed;
+  height: 100%;
+  padding: $page-padding 0 $page-padding $page-padding;
+  box-sizing: border-box;
+  margin-right: 30px;
 }

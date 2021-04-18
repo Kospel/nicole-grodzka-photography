@@ -1,0 +1,43 @@
+.photo-carousel {
+  height: 100%;
+  width: 100%;
+
+  .images-wrapper {
+    display: inline-flex;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+
+    & > img {
+      height: 100%;
+      margin-right: 20px;
+    }
+  }
+
+  .image-navigation {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    &.prev {
+      left: 280px;
+    }
+
+    &.next {
+      right: 30px;
+    }
+
+    &.disabled {
+      display: none;
+    }
+  }
+}

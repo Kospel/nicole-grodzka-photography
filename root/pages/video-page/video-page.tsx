@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 
 const VideoPage: FunctionComponent = () => <div>VIDEO PAGE</div>;
 
-export default VideoPage;
+export default memo(VideoPage);

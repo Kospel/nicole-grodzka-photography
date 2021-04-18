@@ -1,3 +1,4 @@
 $sidebar-width: 220px;
-$sidebar-padding: 30px;
-$sidebar-width-with-padding: calc(#{$sidebar-width} + #{$sidebar-padding});
+$page-padding: 30px;
+$page-content-width: calc(100% - #{$sidebar-width} - #{$page-padding} * 3);
+$sidebar-width-with-padding: calc(#{$sidebar-width} + #{$page-padding});

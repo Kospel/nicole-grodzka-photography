@@ -1,4 +1,4 @@
-import { Photo } from 'common/photo-gallery/interfaces';
+import { Photo } from './interfaces';
 
 const PHOTO_PATH = '/assets/photos';
 
@@ -20,6 +20,16 @@ export const foodPhotos: Photo[] = [
   },
   {
     src: `${PHOTO_PATH}/6.jpg`,
+    width: 1024,
+    height: 683,
+  },
+  {
+    src: `${PHOTO_PATH}/3.jpg`,
+    width: 1024,
+    height: 683,
+  },
+  {
+    src: `${PHOTO_PATH}/4.jpg`,
     width: 1024,
     height: 683,
   },

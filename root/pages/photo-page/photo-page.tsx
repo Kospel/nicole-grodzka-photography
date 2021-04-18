@@ -1,12 +1,12 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 
-import PhotoGallery from 'common/photo-gallery';
 import { foodPhotos } from 'assets/photos';
+import PhotoCarousel from 'common/photo-carousel';
 
 const PhotoPage: FunctionComponent = () => (
   <div className="photo-page">
-    <PhotoGallery photos={foodPhotos} />
+    <PhotoCarousel photos={foodPhotos} />
   </div>
 );
 
-export default PhotoPage;
+export default memo(PhotoPage);

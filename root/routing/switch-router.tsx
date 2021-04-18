@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, memo } from 'react';
 import { Switch } from 'react-router-dom';
 
 import { getRoutes, getNoMatchRoute } from './helpers';
@@ -13,4 +13,4 @@ const SwitchRouter: FunctionComponent = () => (
   </div>
 );
 
-export default SwitchRouter;
+export default memo(SwitchRouter);
